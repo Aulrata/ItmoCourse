@@ -1,14 +1,14 @@
 ﻿Console.WriteLine("Введите координату x тчоки A прямоугольника");
-double.TryParse(Console.ReadLine(), out double xA);
+double xA = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату y тчоки A прямоугольника");
-double.TryParse(Console.ReadLine(), out double yA);
+double yA = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату x тчоки B прямоугольника");
-double.TryParse(Console.ReadLine(), out double xB);
+double xB = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату y тчоки B прямоугольника");
-double.TryParse(Console.ReadLine(), out double yB);
+double yB = double.Parse(Console.ReadLine());
 
 double width = Math.Abs(xB - xA), height = Math.Abs(yB - yA);
 

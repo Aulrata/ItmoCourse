@@ -1,20 +1,20 @@
 ﻿Console.WriteLine("Введите координату x тчоки A треугольника");
-double.TryParse(Console.ReadLine(), out double xA);
+double xA = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату y тчоки A треугольника");
-double.TryParse(Console.ReadLine(), out double yA);
+double yA = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату x тчоки B треугольника");
-double.TryParse(Console.ReadLine(), out double xB);
+double xB = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату y тчоки B треугольника");
-double.TryParse(Console.ReadLine(), out double yB);
+double yB = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату x тчоки C треугольника");
-double.TryParse(Console.ReadLine(), out double xC);
+double xC = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите координату y тчоки C треугольника");
-double.TryParse(Console.ReadLine(), out double yC);
+double yC = double.Parse(Console.ReadLine());
 
 
 double ab = Math.Sqrt(Math.Pow(xB-xA, 2) + Math.Pow(yB-yA, 2));

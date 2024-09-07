@@ -2,16 +2,16 @@
 Console.WriteLine("Введите длину ребра куба: ");
 double length = double.Parse(Console.ReadLine());
 
-Console.WriteLine($"Объем куба: {GetVolume(length)}, площадь поверхности куба: {GetSquare(length)}");
+Console.WriteLine($"Объем куба: {GetMultiplication(length, "volume")}, площадь поверхности куба: {GetMultiplication(length, "square")}");
 
-double GetVolume(double length)     // Проще было бы с лямдой выражения) double GetVolume(double length) => Math.Pow(length, 3);
+double GetMultiplication(double length, string type)
 {
-    return Math.Pow(length, 3);
-}
-
-double GetSquare(double length)     // double GetSquare(double length) => Math.Pow(length, 2);
-{
-    return Math.Pow(length, 2);
+    return type switch
+    {
+        "volume" => Math.Pow(length, 3),
+        "square" => Math.Pow(length, 2),
+        _ => 0
+    };
 }
 
 

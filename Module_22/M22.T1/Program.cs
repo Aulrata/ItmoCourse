@@ -21,7 +21,6 @@ Task sumTask = new(() => ArraySum(arrayOfNumbers));
 var maxTask = sumTask.ContinueWith(x => ArrayMax(x, arrayOfNumbers));
 
 sumTask.Start();
-maxTask.Wait();
 
 return;
 
